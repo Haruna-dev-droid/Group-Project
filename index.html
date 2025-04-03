@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+ <main>
+<div class="card-container">
+
+  
+<div class="first-card">
+
+    <div class="heading-card-one">
+      <h1 class="heading-bill">Bill</h1>
+      <div class="bill-input">
+      <input id="bill-input-space" text="" value="142.55"> 
+      <img src="images/icon-dollar.svg" class="dollar-icon" alt="dollar icon"/>
+     </input>
+     </div>
+    </div>
+
+<!-- select tip div  -->
+<div class="select-tip-card">
+  <h1 class="select-tip-heading"> Select Tip %</h1>
+<div class="selecttip-inner-wrapper">
+  <div class="selecttip-percentage" data-percentage="5%"><p>5%</p></div>
+  <div class="selecttip-percentage" data-percentage="10%"><p>10%</p></div>
+  <div class="selecttip-percentage" data-percentage="15%"><p>15%</p></div>
+   <div class="selecttip-percentage" data-percentage="25%"><p>25%</p></div>
+   <div class="selecttip-percentage" data-percentage="50%"><p>50%</p></div>
+  <div  class="selecttip-percentage select-tip-custom"> <input
+        type="text"
+        placeholder="Custom"
+          /></div>
+          </div>
+</div>
+<div class="number-of-people">
+  <h1 class="number-of-people-heading">Number of people</h1>
+  <div class="bill-input">
+      <input id="bill-input-space" text="" value="142.55">
+      <img src="images/icon-person.svg" class="person-icon" alt="person icon"/>
+  </div>
+
+</div>
+
+ </div>
+
+<!-- SECOND CARD -->
+
+ <div class="second-card">
+<div class="tip-amount-wrapper">
+<div class="tip-amount">
+  <p class="tip-amount-text">Tip amount <br>
+  <p class="tip-per-person">/ Person</p></p>
+</div>
+<div class="tip-amount-price">
+  <p class="tip-amount-bill">$4.27</p>
+</div>
+</div>
+
+<div class="total-amount">
+  <div class="total-amount-wrapper">
+  <div class="total-amount-text">
+  <p class="total-text">Total <br>
+  <p class="total-per-person">/ Person</p></p>
+  </div>
+
+<div class="total-amount-price">
+  <p class="total-amount-dollar">$32.79</p>
+</div>
+</div>
+</div>
+
+
+  <button class="btn reset">RESET</button>
+
+
+ </div>
+   
+
+
+  </div>
+  </main>
+  </body>
+</html>
