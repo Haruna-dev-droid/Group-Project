@@ -30,11 +30,12 @@ tipInputBtns.forEach((inputButton) => {
       peopleInput.classList.toggle("error-active");
       return;
     }
+    // const tottalTip (amount * tipPercentage) / 100
+    const tipAmount = (amount * tipPercentage) / 100;
+    const totalBill = amount + tipAmount;
+    // const totalAmountValue = amount / people + tipAmount;
 
-    const tipAmount = (amount * tipPercentage) / people;
-    const totalAmountValue = amount / people + tipAmount;
-
-    updateResults(tipAmount, totalAmountValue);
+    updateResults(tipAmount, totalBill);
   });
 });
 
