@@ -51,10 +51,12 @@ customTipPercent.addEventListener("input", () => {
     people > 0 &&
     !isNaN(customTipPercentage)
   ) {
-    const customTip = (amount * customTipPercentage) / people;
-    const totalAmountValue = amount / people + customTip;
-
-    updateResults(customTip, totalAmountValue);
+    const tipAmount = (amount * customTipPercentage) / 100;
+    const totalBill = amount + tipAmount;
+    // const customTip = (amount * customTipPercentage) / people;
+    // const totalAmountValue = amount / people + customTip;
+    updateResults(tipAmount, totalBill);
+    // updateResults(customTip, totalAmountValue);
   } else {
     // Optional: reset display if inputs are invalid
     updateResults(0, 0);
